@@ -8,6 +8,11 @@ public class DmbCellPhone extends CellPhone {
 //	DmbCellPhone 클래스에서 구현하지 않아도 사용이 가능함
 	int channel;
 	
+//	자손 객체의 생성자가 없을 경우 컴파일러가 자동으로 생성자를 추가함
+//	자동으로 추가된 기본 생성자의 첫줄에 super() 를 자동으로 입력하여 부모 객체의 생성자를 호출함
+	
+//	자손 객체의 생성자를 명시하였을 경우 컴파일러가 super()를 사용하여 부모 객체의 생성자를 자동으로 호출
+	
 	DmbCellPhone(String model, String color, int channel){
 		this.model = model;
 		this.color = color;
