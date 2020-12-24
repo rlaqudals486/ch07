@@ -45,6 +45,14 @@ public class TvMain {
 		ip.volumeUp();
 		ip.turnOffVOD();
 		ip.powerOff();
+		
+		System.out.println("\n------ 문제 2 절취선 ------\n");
+		
+		tv.powerOn();
+		tv.changeChannel(15);
+		tv.channelUp();
+		tv.channelDown();
+		tv.powerOff();
 	}
 	
 //	문제 1) Television 클래스를 상속받아 IPTV라는 클래스를 생성하고, 

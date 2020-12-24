@@ -4,6 +4,9 @@ public class Television {
 	int channel;
 	int volume;
 	
+	final int ch1 = 15;
+	final int ch2 = 1;
+	
 	void powerOn() {
 		System.out.println("전원을 켭니다.");
 	}
@@ -20,11 +23,19 @@ public class Television {
 	void channelUp() {
 		channel++;
 		System.out.println(this.channel + "번 채널로 변경합니다.");
+		if (channel > 15) {
+			channel = ch2;
+			System.out.println(channel + "채널로 돌아갑니다.");
+		}
 	}
 	
 	void channelDown() {
 		channel--;
 		System.out.println(this.channel + "번 채널로 변경합니다.");
+		if (channel < 1) {
+			channel = ch1;
+			System.out.println(channel + "채널로 돌아갑니다.");
+		}
 	}
 	
 	void changeVolume(int volume) {
